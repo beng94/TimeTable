@@ -1,0 +1,57 @@
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Suggested packages:
+  ctags vim-doc vim-scripts
+The following NEW packages will be installed:
+  vim
+0 upgraded, 1 newly installed, 0 to remove and 192 not upgraded.
+Need to get 976 kB of archives.
+After this operation, 2.289 kB of additional disk space will be used.
+Get:1 http://us.archive.ubuntu.com/ubuntu/ utopic/main vim amd64 2:7.4.273-2ubuntu4 [976 kB]
+Fetched 976 kB in 1s (623 kB/s)
+Selecting previously unselected package vim.
+(Reading database ... 172783 files and directories currently installed.)
+Preparing to unpack .../vim_2%3a7.4.273-2ubuntu4_amd64.deb ...
+Unpacking vim (2:7.4.273-2ubuntu4) ...
+Setting up vim (2:7.4.273-2ubuntu4) ...
+update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/vim (vim) in auto mode
+update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/vimdiff (vimdiff) in auto mode
+update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/rvim (rvim) in auto mode
+update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/rview (rview) in auto mode
+update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/vi (vi) in auto mode
+update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/view (view) in auto mode
+update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/ex (ex) in auto mode
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages will be REMOVED:
+  vim
+0 upgraded, 0 newly installed, 1 to remove and 192 not upgraded.
+After this operation, 2.289 kB disk space will be freed.
+Do you want to continue? [Y/n] 
+y
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Suggested packages:
+  ctags vim-doc vim-scripts
+The following NEW packages will be installed:
+  vim
+0 upgraded, 1 newly installed, 0 to remove and 192 not upgraded.
+Need to get 976 kB of archives.
+After this operation, 2.289 kB of additional disk space will be used.
+Get:1 http://us.archive.ubuntu.com/ubuntu/ utopic/main vim amd64 2:7.4.273-2ubuntu4 [976 kB]
+Fetched 976 kB in 2s (451 kB/s)
+Selecting previously unselected package vim.
+(Reading database ... 172783 files and directories currently installed.)
+Preparing to unpack .../vim_2%3a7.4.273-2ubuntu4_amd64.deb ...
+Unpacking vim (2:7.4.273-2ubuntu4) ...
+Setting up vim (2:7.4.273-2ubuntu4) ...
+update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/vim (vim) in auto mode
+update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/vimdiff (vimdiff) in auto mode
+update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/rvim (rvim) in auto mode
+update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/rview (rview) in auto mode
+update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/vi (vi) in auto mode
+update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/view (view) in auto mode
+update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/ex (ex) in auto mode
