@@ -15,7 +15,7 @@ typedef struct interval
     char* room;
 } interval;
 
-typedef struct subject //Tárgy
+typedef struct subject
 {
     char* sub_code;
     char* sub_name;
@@ -33,7 +33,6 @@ typedef struct lesson
 } lesson;
 
 void add_subject (GList** sub_list, char** const tokens);
-int print_subject (GList* sub_list, int id);
-void print_sub_list(GList* sub_list);
-
+int time_intersects(const interval* interval_a, const interval* interval_b);
+int time_interval_intersects (GList *time_list_a, GList *time_list_b);
 #endif

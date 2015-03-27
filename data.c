@@ -81,7 +81,7 @@ void add_subject (GList **sub_list, char** const tokens)
             strcmp(sub->sub_type, sub_type) == 0)
         {
             //Add occassion to the list
-            printf("existing subject found\n");
+            //printf("existing subject found\n");
             sub->les_list = g_list_append(sub->les_list, (gpointer)new_lesson);
             break;
         }
@@ -101,39 +101,51 @@ void add_subject (GList **sub_list, char** const tokens)
     }
 }
 
-int print_subject (GList* sub_list, int id)
+int time_instersects (const interval* interval_a, const interval* interval_b)
 {
-    subject *sub = (subject*)g_list_nth_data(sub_list, id);
-    if(sub == NULL) return -1;
+    interval* intv_a = interval_a;
+    interval* intv_b = interval_b;
 
-    printf("%s %s %d %s\n", sub->sub_code, sub->sub_name, sub->credit, sub->sub_type);
-
-    int i = 0;
-    lesson *les = NULL;
-    while(les = (lesson*)g_list_nth_data(sub->les_list, i))
+    if(intv_a->day->tm_wday == intv_b->day->tm_wday)
     {
-        printf("%s %s ", les->tutor, les->lang);
-
-        int j = 0;
-        interval *intv = NULL;
-        while(intv = (interval*)g_list_nth_data(les->time_list, j))
+        if(intv_a->beg->tm_hour > intv_b->beg->tm_hour)
         {
-            printf("%s %d %d:%d-%d:%d ",
-                    intv->room,
-                    intv->day->tm_wday,
-                    intv->beg->tm_hour, intv->beg->tm_min,
-                    intv->end->tm_hour, intv->end->tm_min);
-            j++;
+            interval* tmp = intv_a;
+            intv_a = intv_b;
+            intv_b = tmp;
         }
-        printf("\n");
-        i++;
+
+        if(intv_a->beg->tm_hour == intv_b->beg->tm_hour &&
+            intv_a->beg->tm_min > intv_b->beg->tm_min)
+        {
+            interval* tmp = intv_a;
+            intv_a = intv_b;
+            intv_b = tmp;
+        }
+
+        if(intv_a->end->tm_hour > intv_b->beg->tm_hour) return 1;
+        if(intv_a->end->tm_hour == intv_b->beg->tm_hour &&
+            intv_a->end->tm_min >= intv_b->beg->tm_min) return 1;
     }
-    getchar();
-    return 1;
+
+    return 0;
 }
 
-void print_sub_list (GList* sub_list)
+int time_interval_intersects (GList *time_list_a, GList *time_list_b)
 {
+    interval *intv_a = NULL;
     int i = 0;
-    while(print_subject(sub_list, i)) i++;
+    while(intv_a = (interval*)g_list_nth_data(time_list_a, i))
+    {
+        interval *intv_b = NULL;
+        int j = 0;
+        while(intv_b = (interval*)g_list_nth_data(time_list_b, j))
+        {
+            if(time_instersects(intv_a, intv_b)) return 1;
+             j++;
+        }
+        i++;
+    }
+
+    return 0;
 }
