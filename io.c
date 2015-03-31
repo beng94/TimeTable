@@ -125,10 +125,10 @@ void print_sub_list (GList* sub_list)
     while(print_subject(sub_list, i)) i++;
 }
 
-void print_sub_id (Glist* sub_list, int sub_id, int les_id)
+void print_sub_id (GList* sub_list, int sub_id, int les_id)
 {
     subject* sub = (subject*)g_list_nth_data(sub_list, sub_id);
-    lesson* les = (lesson*)g_list_nth_data(sub->les, les_id);
+    lesson* les = (lesson*)g_list_nth_data(sub->les_list, les_id);
 
     printf("%s %s %d %s %s %s",
             sub->sub_code,
@@ -149,6 +149,5 @@ void print_sub_id (Glist* sub_list, int sub_id, int les_id)
                 intv->end->tm_hour, intv->end->tm_min);
         j++;
     }
-
     printf("\n");
 }

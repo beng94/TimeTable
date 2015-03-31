@@ -15,7 +15,12 @@ static int collide (GList *back_list, int* id, int index)
         subject *sub_b = (subject*)g_list_nth_data(back_list, i);
         lesson *les_b = (lesson*)g_list_nth_data(sub_b->les_list, id[i]);
 
-        if (time_interval_intersects(les_a->time_list, les_b->time_list)) return 1;
+        if (time_interval_intersects(les_a->time_list, les_b->time_list))
+        {
+            //printf("collide index: %d\n", i);
+            //printf("%s %s - %s %s", sub_a->sub_name, sub_a->sub_type, sub_b->sub_name, sub_b->sub_type);
+            return 1;
+        }
     }
 
     return 0;
@@ -48,6 +53,17 @@ static gint Gcompare (gconstpointer a, gconstpointer b)
     if(cnt_a == cnt_b) return 0;
 }
 
+static void print_solution (GList* back_list, int* id, int cnt)
+{
+    int i;
+    for(i = 0; i < cnt; i++)
+    {
+        print_sub_id(back_list, i, id[i]);
+    }
+
+    printf("\n");
+}
+
 void back_track (GList **sub_list)
 {
     //TODO: maybe the copy function doesn't work properly
@@ -63,17 +79,19 @@ void back_track (GList **sub_list)
     for(i = 0; i < cnt; i++) id[i] = 0;
 
     int index = 0;
-
+    int db = 0;
     while(1)
     {
-        //printf("%d\n", index);
         subject *tmp = (subject*)g_list_nth_data(back_list, index);
+        //printf("%d ", index);
+        //printf("%s %s\n", tmp->sub_name, tmp->sub_type);
         if(g_list_nth(tmp->les_list, id[index]) == NULL)
         {
             if(index == 0) break;
             step_back(id, index, cnt);
             index--;
             id[index]++;
+            //printf("Step back\n");
             //getchar();
             continue;
         }
@@ -83,6 +101,7 @@ void back_track (GList **sub_list)
             //step_back(id, index, cnt);
             //index--;
             id[index]++;
+            //printf("Collide\n");
             //getchar();
             continue;
         }
@@ -93,17 +112,22 @@ void back_track (GList **sub_list)
             if(index == cnt-1)
             {
                 //print solution
-                print_sub_id(back_list, index, id[index]);
-                //printf("sol found\n");
+                print_solution(back_list, id, cnt);
+                printf("\n");
+                db++;
                 getchar();
                 id[index]++;
                 continue;
             }
-            else {
+            else
+            {
+                //printf("Go on\n");
                 index++;
             }
         }
     }
+
+    printf("%d db megoldást találtam", db);
 
     //TODO: free back_list
     //TODO: free index array

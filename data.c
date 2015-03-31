@@ -141,7 +141,11 @@ int time_interval_intersects (GList *time_list_a, GList *time_list_b)
         int j = 0;
         while(intv_b = (interval*)g_list_nth_data(time_list_b, j))
         {
-            if(time_instersects(intv_a, intv_b)) return 1;
+            if(time_instersects(intv_a, intv_b))
+            {
+               //printf("%d:%d - %d:%d", intv_a->day->tm_wday, intv_a->beg->tm_hour, intv_b->day->tm_wday, intv_b->beg->tm_hour);
+                return 1;
+            }
              j++;
         }
         i++;

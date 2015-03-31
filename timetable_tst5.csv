@@ -5,28 +5,28 @@ BMEVIIIAA00;A programozás alapjai 2;7;1;;G06;Gyakorlat;17/0/35;;;"P:10:15-12:00
 BMEVIIIAA00;A programozás alapjai 2;7;1;;G11;Gyakorlat;30/0/30;;;"SZE:08:15-10:00  (QB331);";Dr. Szeberényi Imre;magyar;;Gyakorlatv...;;;;;;;;;;;;
 BMEVIIIAA00;A programozás alapjai 2;7;1;;L02;Labor;134/0/148;;;"H:12:15-14:00  (R4J,  R4B,  R4L,  R4M,  R4I,  R4E,  R4K);";Dr. Szeberényi Imre;magyar;;;;;;;;;;;;;;
 BMEVIIIAA00;A programozás alapjai 2;7;1;;L03;Labor;35/0/76;;;"H:15:15-17:00  (R4L,  R4M);";Dr. Szeberényi Imre;magyar;;;;;;;;;;;;;;
-BMEVIIIAA00;A programozás alapjai 2;7;1;;L04;Labor;170/0/180;;;"K:08:15-10:00  (R4D,  R4J,  R4B,  R4O,  R4C,  R4P,  R4I,  R4M,  R4E,  R4K);";Dr. Szeberényi Imre;magyar;;;;;;;;;;;;;;
-BMETE11AX24;Fizika 2i;4;1;;IB0;Elmélet;169/0/200;;;"H:08:15-10:00  (F29); H:17:15-19:00  (ZH,  E1B,  K234,  STFNAGY); SZE:15:15-17:00  (F29); CS:08:15-10:00  (ZH,  E…);";Dr. Kornis János;magyar;;;;;;;;;;;;;;
-BMETE11AX24;Fizika 2i;4;1;;IA0;Elmélet;107/0/200;;;"H:17:15-19:00  (ZH,  E1B,  K234,  STFNAGY); SZE:15:15-17:00  (F29); CS:08:15-10:00  (ZH,  E1B,  E1A,  E1C,  CHFMAX);";Dr. Papp Zsolt József;magyar;;;;;;;;;;;;;;
-BMETE11AX24;Fizika 2i;4;1;;IB3;Gyakorlat;34/0/35;;;"SZE:15:15-17:00  (E405);";Dr. Kornis János;magyar;;;;;;;;;;;;;;
+BMEVIIIAA00;A programozás alapjai 2;7;1;;L04;Labor;170/0/180;;;"K:08:15-10:00 (R4D,  R4J,  R4B,  R4O,  R4C,  R4P,  R4I,  R4M,  R4E,  R4K);";Dr. Szeberényi Imre;magyar;;;;;;;;;;;;;;
+BMEVIIIAA00;A programozás alapjai 2;7;1;;L01;Labor;84/0/180;;;"H:08:15-10:00  (R4J,  R4B,  R4L,  R4I,  R4K);";Dr. Szeberényi Imre;magyar;;;;;;;;;;;;;;
+BMETE11AX24;Fizika 2i;4;1;;IB0;Elmélet;169/0/200;;;"H:08:15-10:00 (F29);SZE:15:15-17:00 (F29);";Dr. Kornis János;magyar;;;;;;;;;;;;;;
+BMETE11AX24;Fizika 2i;4;1;;IA0;Elmélet;107/0/200;;;"SZE:15:15-17:00  (F29);P:12:15-14:00 (F29);";Dr. Papp Zsolt József;magyar;;;;;;;;;;;;;;
+BMETE11AX24;Fizika 2i;4;1;;IB3;Gyakorlat;34/0/35;;;"SZE:15:13-15:14  (E405);";Dr. Kornis János;magyar;;;;;;;;;;;;;;
 BMETE11AX24;Fizika 2i;4;1;;IB9;Gyakorlat;21/0/35;;;"K:08:15-10:00  (T605);";Thiering Gergõ, Dr. Kornis János;magyar;;;;;;;;;;;;;;
-BMEVIMIAA00;Rendszermodellezés;4;1;;E;Elmélet;384/0/999;;;"SZE: 8:15-10:00 (IB028);";Gönczy László;magyar;;;;;;;;;;;;;;
+BMEVIMIAA00;Rendszermodellezés;4;1;;E;Elmélet;384/0/999;;;"SZE:12:13-12:14  (IB028);";Gönczy László;magyar;;;;;;;;;;;;;;
 BMEVIMIAA00;Rendszermodellezés;4;1;;G18;Gyakorlat;0/0/35;;;"CS:10:15-12:00  (IB145);";Gönczy László;magyar;;;;;;;;;;;;;;
 BMEVIMIAA00;Rendszermodellezés;4;1;;G08;Gyakorlat;23/0/35;;;"P:10:15-12:00  (IB140);";Gönczy László;magyar;;;;;;;;;;;;;;
 BMEVIMIAA00;Rendszermodellezés;4;1;;G17;Gyakorlat;12/0/35;;;"K:08:15-10:00  (IB413);";Gönczy László, Dr. Pataricza András;magyar;;Emelt szin...;;;;;;;;;;;;
-BMETE90AX22;Analízis 2 informatikusoknak;6;1;;B0;Elmélet;298/0/442;;;"H:17:15-18:00  (ZH,  E1B,  E1A,  E1C,  STFNAGY); K:15:15-17:00  (E1B); CS:09:15-10:00  (ZH,  E1B,  E1A,  E1C,  CHFMAX);";Dr. Tasnádi Tamás Péter;magyar;;;;;;;;;;;;;;
+BMETE90AX22;Analízis 2 informatikusoknak;6;1;;B0;Elmélet;298/0/442;;;"K:15:15-17:00 (E1B);CS:15:15-17:00 (E1B);";Dr. Tasnádi Tamás Péter;magyar;;;;;;;;;;;;;;
 BMETE90AX22;Analízis 2 informatikusoknak;6;1;;B24;Gyakorlat;15/0/17;;;"P:10:15-12:00  (E402);";Sáfár Orsolya;magyar;;;;;;;;;;;;;;
 BMETE90AX22;Analízis 2 informatikusoknak;6;1;;B33;Gyakorlat;17/0/17;;;"CS:10:15-12:00  (R507);";Richlik György Róbert;magyar;;;;;;;;;;;;;;
 BMETE90AX22;Analízis 2 informatikusoknak;6;1;;B08;Gyakorlat;14/0/17;;;"P:12:15-14:00  (R509);";Lovas Attila;magyar;;;;;;;;;;;;;;
 BMETE90AX22;Analízis 2 informatikusoknak;6;1;;B15;Gyakorlat;17/0/17;;;"P:08:15-10:00  (E402);";Sáfár Orsolya;magyar;;;;;;;;;;;;;;
-BMEVISZAA01;Bevezetés a számításelméletbe 2;4;1;;10b;Gyakorlat;35/0/35;;;"K:10:15-12:00  (IB139);";Balázs Barbara;magyar;;;;;;;;;;;;;;
-BMEVISZAA01;Bevezetés a számításelméletbe 2;4;1;;2;Elmélet;81/0/210;;;"H:10:15-12:00  (IB027); H:17:15-19:00  (ZH); CS:08:15-10:00  (ZH,  KF76,  IB028,  QAF14,  IB027,  Q-I,  IB026);";Dr. Wiener Gábor;magyar;;;;;;;;;;;;;;
+BMEVISZAA01;Bevezetés a számításelméletbe 2;4;1;;2;Elmélet;81/0/210;;;"H:10:15-12:00  (IB027);";Dr. Wiener Gábor;magyar;;;;;;;;;;;;;;
 BMEVISZAA01;Bevezetés a számításelméletbe 2;4;1;;20;Gyakorlat;35/0/35;;;"K:08:15-10:00  (IB145);";Vizer Máté;magyar;;;;;;;;;;;;;;
 BMEVISZAA01;Bevezetés a számításelméletbe 2;4;1;;11;Gyakorlat;18/0/18;;;"K:10:15-12:00  (IB140);";Titkos Tamás;magyar;;;;;;;;;;;;;;
 BMEVIHIAA00;Számítógép-architektúrák;5;1;;G6;Gyakorlat;29/0/35;;;"H:12:15-14:00  (IB140);";Dr. Horváth Gábor;magyar;;;;;;;;;;;;;;
 BMEVIHIAA00;Számítógép-architektúrák;5;1;;G7;Gyakorlat;35/0/35;;;"H:15:15-17:00  (IL107);";Dr. Filp András, Dr. Horváth Gábor;magyar;;;;;;;;;;;;;;
 BMEVIHIAA00;Számítógép-architektúrák;5;1;;G16;Gyakorlat;24/0/35;;;"P:12:15-14:00  (IB139);";Dr. Lencse Gábor Sándor, Dr. Horváth Gábor;magyar;;;;;;;;;;;;;;
-BMEVIHIAA00;Számítógép-architektúrák;5;1;;E;Elmélet;364/0/540;;;"H:17:15-19:00  (ZH,  IB028,  QAF14,  IB027,  IE007,  Q-I,  IB026); H:17:15-19:00  (ZH,  IB028,  QAF14,  IB027,  IE007,  Q-I);";Dr. Horváth Gábor;magyar;;;;;;;;;;;;;;
+BMEVIHIAA00;Számítógép-architektúrák;5;1;;E;Elmélet;364/0/540;;;"CS:12:15:14:00 (Q1);P:14:15-16:00 (Q1);";Dr. Horváth Gábor;magyar;;;;;;;;;;;;;;
 BMEVIDHTF02;Tanköri foglalkozás 2.;0;1;;I13;Gyakorlat;20/0/35;;;"K:10:15-12:00  (E404);";Cseh Tamás, Németh Krisztián;magyar;;;;;;;;;;;;;;
-BMEVIHIAV10;Algoritmusok és adatszerkezetek hatékony implementálása C nyelven;2;1;;G;Gyakorlat;30/0/30;;;"SZE:12:15-14:00  (IB138);";Dr. Zsóka Zoltán, Vitéz András;magyar;;Szabadon v...;;;;;;;;;;;;573602879
 BMEVITMAK48;Érzelmek logikája;2;1;;4;Elmélet;411/0/500;;;"CS:17:15-19:00  (IB028);";Dr. Sallai Gyula Antal;magyar;;Az órákat ...;;;;;;;;;;;;573399292
+BMEVIHIAV10;Algoritmusok és adatszerkezetek hatékony implementálása C nyelven;2;1;;G;Gyakorlat;30/0/30;;;"SZE:12:15-14:00  (IB138);";Dr. Zsóka Zoltán, Vitéz András;magyar;;Szabadon v...;;;;;;;;;;;;573602879

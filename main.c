@@ -3,7 +3,7 @@
 #include "io.h"
 #include "backtrack.h"
 
-const char *file_name = "timetable_tst4.csv";
+const char *file_name = "timetable_tst5.csv";
 
 int main()
 {
