@@ -1,6 +1,7 @@
 #include "data.h"
 #include "io.h"
 #include <stdio.h>
+#include <string.h>
 
 //TODO: free tokens
 
@@ -56,7 +57,7 @@ static GList* parse_occassions (const char* str)
     return time_list;
 }
 
-void add_subject (GList **sub_list, char** const tokens)
+void add_subject (GList **sub_list, char** tokens)
 {
     //Go through sub_list and look for lec_name
     //look for lec_type

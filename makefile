@@ -1,5 +1,11 @@
 all:
-	gcc -g main.c backtrack.c backtrack.h io.c io.h time.h data.c data.h -o ALL `pkg-config --cflags --libs glib-2.0`
+	gcc -g -std=c11 \
+	main.c \
+	backtrack.c backtrack.h \
+	io.c io.h \
+	time.h \
+	data.c data.h \
+	-o ALL `pkg-config --cflags --libs glib-2.0`
 
 backtrack:
 	gcc backtrack.c -Wall -o BACKTRACK_C `pkg-config --cflags --libs glib-2.0`

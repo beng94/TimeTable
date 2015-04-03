@@ -32,7 +32,7 @@ typedef struct lesson
     GList *time_list;
 } lesson;
 
-void add_subject (GList** sub_list, char** const tokens);
+void add_subject (GList** sub_list, char** tokens);
 int time_intersects(const interval* interval_a, const interval* interval_b);
 int time_interval_intersects (GList *time_list_a, GList *time_list_b);
 #endif

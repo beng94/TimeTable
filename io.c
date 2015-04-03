@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "io.h"
 #include "data.h"
+#include <string.h>
 
 static void change_commas (char* str, size_t len)
 {
