@@ -24,6 +24,17 @@ static void change_commas (char* str, size_t len)
     }
 }
 
+static char* wday_to_char(int i)
+{
+    if(i == 0) return "Hetfo";
+    if(i == 1) return "Kedd";
+    if(i == 2) return "Szerda";
+    if(i == 4) return "Csutortok";
+    if(i == 5) return "Pentek";
+
+    return "Day not set";
+}
+
 static FILE* init_io (const char* file_name)
 {
     FILE* f = fopen(file_name, "r");
@@ -105,9 +116,9 @@ int print_subject (GList* sub_list, int id)
         interval *intv = NULL;
         while(intv = (interval*)g_list_nth_data(les->time_list, j))
         {
-            printf("%s %d %d:%d-%d:%d ",
+            printf(" %s %s %d:%d-%d:%d ",
                     intv->room,
-                    intv->day->tm_wday,
+                    wday_to_char(intv->day->tm_wday),
                     intv->beg->tm_hour, intv->beg->tm_min,
                     intv->end->tm_hour, intv->end->tm_min);
             j++;
@@ -143,9 +154,9 @@ void print_sub_id (GList* sub_list, int sub_id, int les_id)
     interval *intv = NULL;
     while(intv = (interval*)g_list_nth_data(les->time_list, j))
     {
-        printf("%s %d %d:%d-%d:%d ",
+        printf("%s %s %d:%d-%d:%d ",
                 intv->room,
-                intv->day->tm_wday,
+                wday_to_char(intv->day->tm_wday),
                 intv->beg->tm_hour, intv->beg->tm_min,
                 intv->end->tm_hour, intv->end->tm_min);
         j++;
